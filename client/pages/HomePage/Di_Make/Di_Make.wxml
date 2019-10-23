@@ -1,0 +1,73 @@
+<view class='view_home'>
+  <!--头部  -->
+  <view class='view_T'>
+    <view class='userImg' bindtap='OpenMy'>
+      <text class='iconfont .icon-weibiaoti-_huabanfuben'></text>
+    </view>
+    <view bindtap='onclikNow'>
+      <text class='text_now'>现在</text>
+    </view>
+    <text class='text_small'>|</text>
+    <view bindtap='Make_IfUser'>
+      <text class='text_make'>预约</text>
+    </view>
+    <view class='img_order' bindtap='OpenOrder'>
+      <text class='iconfont .icon-dingdan'></text>
+    </view>
+  </view>
+  <!-- 去向  -->
+  <view class='view_make'>
+    <view class='text_join'>
+      <text>如有行程有变，请联系师傅</text>
+    </view>
+    <view>
+      <view class='img_dot'>
+        <text class='iconfont .icon-shizhong'></text>
+      </view>
+      <view class='img_origin'>
+        <text class='iconfont .icon-dian'></text>
+      </view>
+      <view class='img_destination'>
+        <text class='iconfont .icon-dian'></text>
+      </view>
+      <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+        <view wx:if="{{Maketest==null}}">
+          <text class='Dateselect'>选择您预约出发时间!</text>
+        </view>
+        <view wx:if="{{Maketest==1}}">
+          <text class='Dateselect1'>
+{{dateTimeArray1[0][dateTime1[0]]}}年{{dateTimeArray1[1][dateTime1[1]]}}月{{dateTimeArray1[2][dateTime1[2]]}}日{{dateTimeArray1[3][dateTime1[3]]}}时{{dateTimeArray1[4][dateTime1[4]]}}分</text>
+        </view>
+      </picker>
+      <text class='img_origin_t'>{{textData.name}},{{textData.desc}}</text>
+      <view bindtap='bindtrue' wx:if="{{addressName.length<1}}">
+        <text class='img_origin_z'>您要去哪儿？</text>
+      </view>
+      <view bindtap='bindtrue' wx:if="{{addressName}}">
+        <text class='img_origin_z'>{{addressName}}</text>
+      </view>
+    </view>
+  </view>
+  <!-- 立即预约 -->
+  <view wx:if="{{addressName}}">
+    <view class='makedriver'>
+      <text>预约收藏司机</text>
+    </view>
+  </view>
+
+  <view wx:if="{{addressName}}">
+    <view class='MakeOk' bindtap='CarMake'>
+      <text class='txt_Make'>立即预约</text>
+    </view>
+  </view>
+
+</view>
+
+<!-- <text>{{addressLocation}}</text> -->
+<!-- <view>
+  <picker mode="multiSelector" value="{{dateTime1}}"  bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+   <text class='Dateselect'>
+      时间: {{dateTimeArray1[0][dateTime1[0]]}}年{{dateTimeArray1[1][dateTime1[1]]}}月{{dateTimeArray1[2][dateTime1[2]]}}日{{dateTimeArray1[3][dateTime1[3]]}}时{{dateTimeArray1[4][dateTime1[4]]}}分
+   </text>
+  </picker>
+</view> -->

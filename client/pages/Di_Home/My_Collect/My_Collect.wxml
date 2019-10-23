@@ -1,0 +1,17 @@
+
+<view class='box'>
+ <view class='MakeDriver' wx:for="{{Carlist}}" wx:for-item="item" wx:key="id">
+  <view class='T_Driver'>
+    <image src='../../../images/男头像.png'></image>
+  </view>
+  <view class='text'>
+   <text class='Driver_name'>姓名 : {{item.carName}}</text>
+   <text class='Driver_number'>车牌号 : {{item.carSum}}</text>
+   <text class='Driver_phone'>手机号 : {{item.carOhone}}</text>
+  </view> 
+  <view class='Driver_Make'>
+    <text class='iconfont .icon-heart'>已收藏</text>
+  </view>
+</view> 
+</view>
+

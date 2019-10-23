@@ -1,0 +1,205 @@
+/* pages/My/My.wxss */
+
+.View_Bg {
+  width: 100%;
+  height: 200rpx;
+  border: 0px solid black;
+  background: #fa7e00;
+}
+
+.View_Bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#userImg {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+#userImg img {
+  border-radius: 50%;
+}
+
+.img_url {
+  background: url('../');
+}
+
+.userName {
+  display: flex;
+  justify-content: center;
+  color: blanchedalmond;
+}
+
+.view_Name {
+  width: 100%;
+  height: 200rpx;
+  border: 0px solid black;
+  background: #fa7e00;
+}
+
+.taKing {
+  width: 86%;
+  height: 180rpx;
+  border: 0px solid black;
+  background: white;
+  position: absolute;
+  left: 7%;
+  top: 300rpx;
+  /* border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+  border-bottom-right-radius: 30rpx; */
+  border-radius: 30rpx;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.this_month {
+  position: absolute;
+  top: 20rpx;
+  left: 2%;
+  font-size: 38rpx;
+  color: darkgray;
+}
+
+.this_year {
+  position: absolute;
+  top: 20rpx;
+  left: 38%;
+  font-size: 38rpx;
+  color: darkgray;
+}
+
+.this_all {
+  position: absolute;
+  top: 20rpx;
+  left: 74%;
+  font-size: 38rpx;
+  color: darkgray;
+}
+
+.month_conunt {
+  display: flex;
+  margin-left: 75rpx;
+  margin-top: -40rpx;
+  color: darkgray;
+}
+
+.year_conunt {
+  display: flex;
+  justify-content: center;
+  margin-top: -46rpx;
+  color: darkgray;
+}
+
+.all_conunt {
+  /* display: flex;
+  margin-top: -46rpx;
+  margin-right: 20px; */
+  position: absolute;
+  right: 75rpx;
+  top: 87rpx;
+  color: darkgray;
+}
+
+.My_collect {
+  width: 92%;
+  height: 120rpx;
+  border: 0px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  position: absolute;
+  left: 4%;
+  top: 540rpx;
+}
+
+.My_taKing {
+  width: 92%;
+  height: 120rpx;
+  border: 0px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  position: absolute;
+  left: 4%;
+  top: 740rpx;
+}
+
+.My_help {
+  width: 92%;
+  height: 120rpx;
+  border: 0px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+  position: absolute;
+  left: 4%;
+  top: 940rpx;
+}
+
+.My_collect-t {
+  position: absolute;
+  top: 34rpx;
+  left: 20rpx;
+  font-size: 38rpx;
+  color: darkgray;
+}
+
+.My_taKing-t {
+  position: absolute;
+  top: 34rpx;
+  left: 20rpx;
+  font-size: 38rpx;
+  color: darkgray;
+}
+
+.My_help-t {
+  position: absolute;
+  top: 34rpx;
+  left: 20rpx;
+  font-size: 38rpx;
+  color: darkgray;
+}
+
+.class_arrow1 {
+  position: absolute;
+  margin-top: 176rpx;
+  right: 80rpx;
+  color: #fa7e00;
+}
+
+.class_arrow2 {
+  position: absolute;
+  margin-top: 376rpx;
+  right: 80rpx;
+  color: #fa7e00;
+}
+
+.class_arrow3 {
+  position: absolute;
+  margin-top: 576rpx;
+  right: 80rpx;
+  color: #fa7e00;
+}
+
+.shuxian {
+  width: 1rpx;
+  height: 110rpx;
+  background: #aaa;
+  display: flex;
+  margin-left: 200rpx;
+  margin-top: 18rpx;
+}
+
+.shuxian2 {
+  width: 1rpx;
+  height: 110rpx;
+  background: #aaa;
+  display: flex;
+  margin-left: 440rpx;
+  margin-top: -104rpx;
+}

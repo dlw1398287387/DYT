@@ -1,0 +1,95 @@
+<view>
+  <!--头部  -->
+  <view class='view_T'>
+    <view class='userImg' bindtap='OpenMy'>
+      <text class='iconfont .icon-weibiaoti-_huabanfuben'></text>
+    </view>
+    <view>
+      <text class='text_now'>现在</text> 
+    </view>
+    <text class='text_small'>|</text>
+    <view bindtap='MakeCar'>
+      <text class='text_make'>预约</text>
+    </view>
+    <view class='img_order' bindtap='OpenOrder'>
+      <text class='iconfont .icon-dingdan'></text>
+    </view>
+  </view>
+  <!-- 地图  -->
+  <view>
+    <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" markers="{{markers}}" polyline="{{polyline}}"></map>
+  </view>
+  <!--选择时间  -->
+  <view class='view_Datetime'>
+    <view class="picker">
+      出发时间: {{date}}
+    </view>
+  </view>
+
+  <!--起始位置-->
+  <!--起点  -->
+
+  <view wx:if="{{addressName.length<1}}">
+    <view class='text_box'>
+      <text class='iconfont .icon-dian'></text> {{textData.name}},{{textData.desc}}
+    </view>
+    <!--终点  -->
+    <view class='text_box1' bindtap='bindtrue'>
+      <text class='iconfont .icon-dian'></text>
+      <text class='text_od'>您要去哪儿？</text> {{addressName}}
+      <text>{{addressLocation}}</text>
+    </view>
+  </view>
+  <!--立即叫车-->
+  <!--style='text-align:center'-->
+  <view class='call_car_money' wx:if="{{addressName}}" style='text-align:center'>
+    <text class='text_car_money'>预计里程:{{distance}}\n预计金额:{{cost}}</text>
+  </view>
+  <view class='call_car' wx:if="{{addressName}}" bindtap='CallCar'>
+    <text class='text_call_car'>立即叫车</text>
+  </view>
+
+  <!-- socket 返回司机信息  -->
+
+  <!-- <view class='driverContent' wx:if="{{OrderContent.driverInfo.name.length>2}}"> -->
+    <!-- 司机头像 -->
+    <!-- <image src='../../../images/男头像.png'></image> -->
+    <!-- 司机姓名  -->
+    <!-- <text class='driverName'>{{OrderContent.driverInfo.name}}</text> -->
+    <!-- 车牌号 -->
+    <!-- <view class='droverBrand'>
+      <text>晋A66666</text>
+    </view> -->
+    <!-- 服务人次 -->
+    <!-- <view class='driverPerson'> -->
+      <!--以服务11244人次  -->
+      <!-- <text>{{OrderContent.phone}}</text>
+    </view> -->
+    <!-- 车辆图标  -->
+    <!-- <view class='driverCar'>
+      <text class='iconfont .icon-xiaoqiche'></text>
+    </view> -->
+    <!-- 取消订单  -->
+    <!-- <view bindtap='cancel_Order'>
+      <view class='cancelOrder'>
+        <text class='iconfont .icon-quxiao'></text>
+      </view>
+      <text class='cancleText'>取消订单</text>
+    </view> -->
+    <!-- 拨打司机电话  -->
+    <!-- <view bindtap='cllDriver'>
+      <view class='DaCll'>
+        <text class='iconfont .icon-dianhuahover'></text>
+      </view> -->
+      <!-- <text class='cllDriver'>呼叫司机</text> -->
+      <!-- <input hidden='true' bindinput='bindinputKeyPhone'>15908619974</input> -->
+    <!-- </view> -->
+    <!-- 分享行程  -->
+    <!-- <view bindtap='Collectdriver'>
+      <view class='transpond'>
+        <text class='iconfont .icon-zhuanfa'></text>
+      </view>
+      <text class='transpond_text'> 收藏司机</text>
+    </view>
+  </view> -->
+</view>

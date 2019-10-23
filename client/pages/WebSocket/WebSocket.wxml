@@ -1,0 +1,3 @@
+<!--pages/WebSocket/WebSocket.wxml-->
+<button bindtap='OpenSocket'>连接了</button>
+<button bindtap='ColseSocket'>关闭连接</button>

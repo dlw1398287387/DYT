@@ -1,0 +1,14 @@
+<view class="section">
+  <input bindinput="bindInput" placeholder="搜索" focus="true" value='{{AddressName}}'/>
+  <button class='btn-Wc' size='mini' type='primary' bindtap='SetSession'>完成</button>
+  <!-- <view class='View_Bk'></view> -->
+</view>
+<view bindtouchstart="bindSearch" data-keywords="{{i.name}}" data-location="{{i.location}}" class="text_box" wx:for="{{tips}}" wx:for-item="i">
+  {{i.name}} 
+</view>
+<view wx:if="{{AddressName==''}}">
+</view>
+<view wx:if="{{AddressName!=''}}">
+  <text>您的目的地位置：{{AddressName}}\n经纬度坐标:{{AddressLocation}}</text>
+</view>
+<!-- <image src='../../img/搜索.png' class='img_Ss'></image> -->

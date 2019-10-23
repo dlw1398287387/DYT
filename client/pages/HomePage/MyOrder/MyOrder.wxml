@@ -1,0 +1,75 @@
+<view class='box'>
+  <view class='MakeDriver' wx:for="{{OrderList}}" wx:for-item="item" wx:key="id">
+    <navigator url='/pages/HomePage/OrderContent/OrderContent?id={{item.Order_Id}}&state={{item.OrderStatus}}'>
+      <view class='order_content'>
+        <view class='address_length'>
+        <text>地址: {{item.Departure}} — {{item.Destination}}</text>
+        </view>
+        <text>时间: {{item.DepartTime}}</text>
+        <text>司机: 李师傅</text>
+        <text>牌号: 晋AE86</text>
+      </view>
+    </navigator>
+    <view class='Driver_Make'>
+      <view wx:if="{{item.OrderStatus==500}}">
+        <text class='iconfont .icon-dagou'> 打车成功</text>
+      </view>
+      <view class='bofang' wx:if="{{item.OrderStatus==0}}">
+        <text class='iconfont .icon-bofang'> 打车中</text>
+      </view>
+      <view class='ChekOK' wx:if="{{item.OrderStatus==100}}">
+        <text class='iconfont .icon-dagou'>订单待确认</text>
+      </view>
+      <view class='ChekNO' wx:if="{{item.OrderStatus==1}}">
+        <text class='iconfont .icon-quxiao'>您取消订单</text>
+      </view>
+      <view class='ChekNO' wx:if="{{item.OrderStatus==2}}">
+        <text class='iconfont .icon-quxiao'>司机取消订单</text>
+      </view>
+      <view class='ChekNO' wx:if="{{item.OrderStatus==3}}">
+        <text class='iconfont .icon-quxiao'>平台取消</text>
+      </view>
+      <view class='ChekNO' wx:if="{{item.OrderStatus==4}}">
+        <text class='iconfont .icon-quxiao'>您违约</text>
+      </view>
+      <view class='ChekNO' wx:if="{{item.OrderStatus==5}}">
+        <text class='iconfont .icon-quxiao'>司机违约</text>
+      </view>
+    </view>
+  </view>
+  <!-- <text>向下拉取获取更多订单信息！</text> -->
+</view>
+
+
+<!-- <view class='box'>
+  <view class='MakeDriver'>
+    <view class='order_content'>
+      <text>地址: 环能科技大厦 — 科宇大厦万科花园</text>
+      <text>时间: 1997-5-5</text>
+      <text>司机: 李师傅</text>
+      <text>牌号: 晋AE86</text>
+    </view>
+    <view class='Driver_Make'>
+       <text class='iconfont .icon-dagou'> 打车成功</text> 
+      <!-- <view class='bofang'>
+        <text class='iconfont .icon-bofang'> 打车中</text>
+      </view> -->
+<!-- </view>
+
+  </view> -->
+<!-- <view class='MakeDriver'>
+    <view class='order_content'>
+      <text>地址: 环能科技大厦 — 科宇大厦万科花园</text>
+      <text>时间: 1997-5-5</text>
+      <text>司机: 李师傅</text> -->
+<!-- <text>电话: 12345678911</text> -->
+<!-- <text>牌号: 晋AE86</text>
+    </view>
+    <view class='Driver_Make'>
+       <text class='iconfont .icon-dagou'> 打车成功</text>  -->
+<!-- <view class='bofang'>
+        <text class='iconfont .icon-bofang'> 打车中</text>
+      </view> -->
+<!-- </view>
+  </view>
+</view>  -->

@@ -1,0 +1,167 @@
+img_dot/* pages/HomePage/Di_Make/Di_Make.wxss */
+.view_home {
+  width: 100%;
+  height: 600%;
+  background: #f6f8f8;
+}
+
+.view_T {
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  border: 2rpx solid #ededed;
+  box-shadow: 1px 1px 1px 1px #888;
+}
+
+.userImg {
+  width: 18%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userImg text {
+  font-size: 25px;
+  color: black;
+  /*自己修改样式  */
+}
+
+.text_now {
+  position: absolute;
+  top: 30rpx;
+  left: 200rpx;
+  color: #999;
+  font-size: 38rpx;
+}
+
+.text_small {
+  position: absolute;
+  top: 30rpx;
+  left: 350rpx;
+  color: #999;
+}
+
+.text_make {
+  position: absolute;
+  top: 30rpx;
+  left: 450rpx;
+  color: #fa7e00;
+  font-size: 38rpx;
+}
+
+.img_order {
+  width: 8%;
+  height: 100%;
+  position: absolute;
+  top: 20rpx;
+  right: 40rpx;
+}
+
+.img_order text {
+  font-size: 28px;
+}
+
+.view_make {
+  width: 90%;
+  height: 500rpx;
+  background: #fff;
+  margin: 5%;
+  box-shadow: 5px 5px 5px #888;
+}
+
+.text_join {
+  font-size: 32rpx;
+  color: #999;
+  margin: 6%;
+  position: absolute;
+  margin-top: 30rpx;
+}
+
+.img_dot {
+  height: 40rpx;
+  width: 40rpx;
+  position: absolute;
+  margin-top: 110rpx;
+  left: 76rpx;
+}
+
+.img_dot text {
+  color: black;
+}
+
+.img_origin {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  margin-top: 240rpx;
+  left: 76rpx;
+}
+
+.img_origin text {
+  color: #00a2ea;
+}
+
+.img_origin_t {
+  position: absolute;
+  margin-top: 240rpx;
+  left: 120rpx;
+}
+
+.img_destination {
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  margin-top: 370rpx;
+  left: 76rpx;
+}
+
+.img_destination {
+  color: #fa7e00;
+}
+
+.img_origin_z {
+  position: absolute;
+  margin-top: 370rpx;
+  /* top: 524rpx; */
+  left: 120rpx;
+  color: #fa7e00;
+}
+
+.Dateselect {
+  position: absolute;
+  margin-top: 110rpx;
+  left: 120rpx;
+  color: #bbb;
+}
+
+.Dateselect1 {
+  position: absolute;
+  margin-top: 70rpx;
+  left: 120rpx;
+  color: #bbb;
+}
+
+.MakeOk {
+  width: 90%;
+  height: 120rpx;
+  background: #fa7e00;
+  position: absolute;
+  left: 5%;
+}
+
+.txt_Make {
+  position: absolute;
+  top: 30rpx;
+  left: 40%;
+  color: #fff;
+}
+
+/* .call_car{
+  width: 90%;
+  height: 100rpx;
+  background: #fa7e00;
+  position: absolute;
+  left: 5%; 
+  margin-top: 2%;
+} */

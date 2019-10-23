@@ -1,0 +1,33 @@
+/* .home{
+  width: 100%;
+  height: 100%;
+  background: #aaa;
+} */
+.driver_img image{
+  width:148rpx;
+  height: 148rpx;
+  display: flex;
+  margin-left: 11%;
+  margin-top: 11%;
+}
+.driver_name text{
+  font-size: 34rpx;
+  color: #aaa;
+  display: flex;
+  margin-left: 37%;
+  margin-top: -150rpx;
+}
+.carSum text{
+  font-size: 34rpx;
+  color: #aaa;
+  display: flex;
+  margin-left: 37%;
+  margin-top: 10rpx;
+}
+.driver_phone{
+  font-size:34rpx;
+  color: #aaa;
+  display: flex;
+  margin-left: 37%;
+  margin-top: 10rpx;
+}

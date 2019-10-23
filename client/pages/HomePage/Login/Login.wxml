@@ -1,0 +1,19 @@
+<view class='view_h'>
+  <view>
+    <image class='img_Ds' src='../../../images/微信图片_20180516171718.png'></image>
+  </view>
+  <view>
+   <!-- open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber' -->
+    <button open-type='getUserInfo' lang='zh_CN' bindgetuserinfo='onGetUserInfo'>使用微信登陆</button>
+    <view class='img_weixin'>
+      <text class='iconfont .icon-weixin'></text>
+    </view>
+  </view>
+</view> 
+
+  <view class='Text_Phone'>
+     <text>
+      <!-- 使用手机号码登陆 / 注册 -->
+        有错误信息请及时反馈我们
+     </text> 
+  </view>

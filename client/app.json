@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/HomePage/Di_Home/Di_Home",
+    "pages/HomePage/Login/Login",
+    "pages/music/music",
+    "pages/Di_Home/loginText/loginText",
+    "pages/HomePage/test/test",
+    "pages/HomePage/OrderContent/OrderContent",
+    "pages/scanCode/scanCode",
+    "pages/HomePage/MyOrder/MyOrder",
+    "pages/HomePage/canCel/canCel",
+    "pages/Di_Home/GetPhone/GetPhone",
+    "pages/WebSocket/WebSocket",
+    "pages/Di_Home/TakingOrder/TakingOrder",
+    "pages/Di_Home/My_Collect/My_Collect",
+    "pages/Heip/Heip",
+    "pages/test/test",
+    "pages/My/My",
+    "pages/HomePage/Di_Make/Di_Make",
+    "pages/Di_Home/MakeDriver/MakeDriver",
+    "pages/HomePage/Di_Make_Poi/Di_Make_Poi",
+    "pages/HomePage/Di_Poi/Di_Poi"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Wafer Quick Start",
+    "navigationBarTextStyle": "black"
+  }
+}

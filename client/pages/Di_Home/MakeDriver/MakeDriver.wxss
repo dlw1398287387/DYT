@@ -1,0 +1,63 @@
+/* pages/Di_Home/MakeDriver/MakeDriver.wxss */
+.MakeDriver{
+  width: 90%;
+  height: 240rpx;
+  border: 0px solid black;
+  position: absolute;
+  left: 5%;
+  background: #ffffff;
+  margin-top: 30rpx;
+  box-shadow:0px 0px  1px 1px #aaa;
+}
+.T_Driver image{
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  top: 50rpx;
+  left: 5%;
+}
+.Driver_name{
+  position: absolute;
+  left: 25%;
+  top: 30rpx;
+  font-size: 38rpx;
+  color: darkgray;
+}
+.Driver_number{
+  position: absolute;
+  left: 25%;
+  top: 80rpx;
+  font-size: 38rpx;
+  color: darkgray;
+}
+.Driver_phone{
+  position: absolute;
+  left: 25%;
+  top: 140rpx;
+  font-size: 38rpx;
+  color: darkgray;
+}
+ .Driver_Make button{
+  position: absolute;
+  right: 5%;
+  top:30rpx;
+  color: white;
+  background: #fa7e00;
+} 
+
+.but_Make{
+  width: 85%;
+  color: white;
+  background: #fa7e00;
+  position: absolute;
+  top: 900rpx;
+  left: 7%;
+}
+.but_Check{
+  width: 85%;
+  color: #fa7e00;
+  border: 1px solid pink;
+  position: absolute;
+  top: 1050rpx;
+  left: 7%;
+}

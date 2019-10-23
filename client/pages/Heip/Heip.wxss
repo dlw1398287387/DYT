@@ -1,0 +1,25 @@
+/* pages/Heip/Heip.wxss */
+.text_1{
+  width: 84%;
+  margin-top: 5%;
+  position: absolute;
+  left: 8%;
+  font-size: 34rpx;
+  color: #666666;
+}
+.text_2{
+  width: 84%;
+  margin-top: 35%;
+  position: absolute;
+  left: 8%;
+  font-size: 34rpx;
+  color: #666666;
+}
+.text_3{
+  width: 84%;
+  margin-top:65%;
+  position: absolute;
+  left: 8%;
+  font-size: 34rpx;
+  color: #666666;
+}

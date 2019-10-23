@@ -1,0 +1,10 @@
+<view class='View_One'>
+  <image class='img_Ds' src='../../../images/微信图片_20180516171718.png'></image>
+  <text class='text_One'>*使用与微信绑定的手机号与司机联系</text>
+  <button class='btn_Phone' open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber'>获取微信手机号</button>
+</view>
+
+<view>
+  <text class='text_hint'>请确保手机号畅通</text>
+  <text class='text_hint2'>请与我们联系</text>
+</view>

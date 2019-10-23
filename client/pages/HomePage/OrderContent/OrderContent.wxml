@@ -1,0 +1,98 @@
+<!--pages/HomePage/OrderContent/OrderContent.wxml-->
+<view class='HomeOne'>
+  <view class='l'>
+    <view>
+      <text>起始地：{{content.Departure}}</text>
+    </view>
+    <view>
+      <text>目的地：{{content.Destination}}</text>
+    </view>
+    <view>
+      <text decode='true'>时 &nbsp;&nbsp;间：{{content.DepartTime}}</text>
+    </view>
+    <view>
+      <text decode='true'>司 &nbsp;&nbsp;机：李师傅</text>
+    </view>
+    <view>
+      <text decode='true'>车 &nbsp;&nbsp;牌：晋BC3587</text>
+    </view>
+    <view>
+      <text decode='true'>电 &nbsp;&nbsp;话：14725836912</text>
+    </view>
+    <view>
+      <text></text>
+    </view>
+  </view>
+</view>
+
+
+<!-- 确认完成订单，由司机端先确认100状态 -->
+<view wx:if="{{Orderstates==100}}">
+  <view>
+    <block wx:for="{{stars}}">
+      <image class="star-image" style="left: {{item*100}}rpx" src="{{key > item ?(key-item == 0.5?halfSrc:selectedSrc) : normalSrc}}">
+        <view class="item" style="left:0rpx" data-key="{{item+0.5}}" bindtap="selectLeft"></view>
+        <view class="item" style="left:50rpx" data-key="{{item+1}}" bindtap="selectRight"></view>
+      </image>
+    </block>
+    <!-- 评价 -->
+    <view>
+      <view>
+        <text class='pjtitle'>{{evaluationcontent}}</text>
+      </view>
+      <view>
+        <text class='pjtitle2'>为司机点个👍吧</text>
+      </view>
+      <view class='left-'></view>
+      <view class='right-'></view>
+    </view>
+  </view>
+  <!--  -->
+  <view class='Pjtext'>
+    <textarea maxlength="127" placeholder='请输入评价内容！'></textarea>
+  </view>
+  <view class='btn_Order'>
+    <button bindtap='startRating'>确认订单完成</button>
+  </view>
+</view>
+
+
+<view wx:if="{{Orderstates==500}}">
+
+  <view class='Order_Ok'>
+    <text class='iconfont _icon.icon-shenqingchenggonggougouicon'></text>
+  </view>
+  <text class='Oktext'>本次打车完成! 感谢您的使用</text>
+  <button class='_Home' bindtap='returnHome'>返回首页</button>
+</view>
+
+<view wx:if="{{Orderstates==1}}">
+  <text class='Order_cancel'>您取消了此订单</text>
+  <text class='cancel_cause'>取消原因：司机太远</text>
+  <button class='btn_Home'>返回首页</button>
+</view>
+
+<view wx:if="{{Orderstates==2}}">
+  <text>司机取消订单</text>
+</view>
+
+<view wx:if="{{Orderstates==3}}">
+  <text>网约车平台取消了您的订单!</text>
+</view>
+
+<view wx:if="{{Orderstates==4}}">
+  <text>由于您违约订单被取消</text>
+</view>
+
+<view wx:if="{{Orderstates==5}}">
+  <text>由于司机违约订单被取消</text>
+</view>
+
+<view wx:if="{{Orderstates==0}}">
+  <view class='iconcllCar'>
+    <text class='iconfont .icon-tubiaozhizuomoban'></text>
+  </view>
+  <text class='cllText'>打车中,请您保持手机畅通，等待司机接送！</text>
+  <button class='driverT'>联系司机</button>
+  <button class='OrderT'>取消订单</button>
+</view>

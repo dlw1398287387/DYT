@@ -1,0 +1,18 @@
+
+
+
+<view>
+  <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+  <view wx:if="{{Maketest==null}}">
+  <text>选择您预约出发时间</text>
+ </view>
+    <view  wx:if="{{Maketest==1}}">
+{{dateTimeArray1[0][dateTime1[0]]}}年{{dateTimeArray1[1][dateTime1[1]]}}月{{dateTimeArray1[2][dateTime1[2]]}}日{{dateTimeArray1[3][dateTime1[3]]}}时{{dateTimeArray1[4][dateTime1[4]]}}分
+    </view>
+  </picker>
+</view>
+
+<view wx:for="{{haha}}" wx:for-item="user" wx:for-index="id">
+    {{user.id}}
+    {{user.username}}
+</view>

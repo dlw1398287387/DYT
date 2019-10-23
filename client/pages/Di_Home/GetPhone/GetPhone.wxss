@@ -1,0 +1,40 @@
+/* pages/Di_Home/GetPhone/GetPhone.wxss */
+.View_One{
+  width: 100%;
+  height: 900rpx;
+  border: 0px solid black;
+}
+.img_Ds{
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  top: 20rpx;
+}
+.text_One{
+  font-size: 32rpx;
+  color: gray;
+  position: absolute;
+  top: 430rpx; 
+  left: 17%;
+  
+}
+.btn_Phone{
+  width: 80%;
+  background: #fa7e00;
+  position: absolute;
+  top: 500rpx;
+  left: 10%;
+  color: ghostwhite;
+}
+.text_hint{
+  display: flex;
+  justify-content: center;
+  font-size: 32rpx;
+  color: gray;
+}
+.text_hint2{
+  display: flex;
+  justify-content: center;
+  font-size: 32rpx;
+  color: gray;
+}

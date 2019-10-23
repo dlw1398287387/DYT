@@ -1,0 +1,41 @@
+/* pages/HomePage/Login/Login.wxss */
+.view_h{
+  width: 100%;
+  height: 1000rpx;
+  /* border: 1px solid black; */
+}
+.img_Ds{
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  top: 160rpx;
+}
+button::after{
+  border: none;
+}
+button{
+  position: absolute; 
+  background: #fa7e00;  
+  color: #ffffff;
+  width: 90%;
+  top: 600rpx;
+  left: 5%;
+  /* text-align: right; */
+}
+ .img_weixin{
+  position: absolute;
+  top: 620rpx;
+  left: 186rpx;
+  width: 50rpx;
+  height: 50rpx;
+} 
+.Text_Phone{
+  display: flex;
+  justify-content: center;
+  font-size: 32rpx;
+  color: #999999;
+}
+
+.img_weixin text{
+  font-size: 50rpx;
+}

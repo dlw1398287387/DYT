@@ -1,0 +1,19 @@
+{
+	"client": "client/",
+	"svr": "server/",
+	"miniprogramRoot": "client/",
+	"qcloudRoot": "server/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"nodeModules": false
+	},
+	"appid": "wx1ca22e3163a07ec6",
+	"projectname": "Di%20and",
+	"libVersion": "2.1.1",
+	"compileType": "miniprogram",
+	"condition": {}
+}

@@ -1,0 +1,19 @@
+<view class='MakeDriver'>
+  <view class='T_Driver'>
+    <image src='../../../images/男头像.png'></image>
+  </view>
+  <text class='Driver_name'>姓名:{{}}</text>
+   <text class='Driver_number'>车牌号:{{}}</text>
+  <text class='Driver_phone'>手机号:{{}}</text> 
+
+  <view class='Driver_Make'>
+    <!-- <text>预约</text> -->
+    <button size='mini'>预约</button>
+  </view>
+</view>
+
+<view>
+
+  <button class='but_Make'>预约所以司机</button>
+  <button class='but_Check'>查看预约结果</button>
+</view>

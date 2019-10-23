@@ -1,0 +1,228 @@
+/* pages/HomePage/Di_Home/Di_Home.wxss */
+
+.map {
+  width: 100%;
+  height: 600rpx;
+  border: 1rpx solid #ededed;
+}
+
+.view_T {
+  width: 100%;
+  height: 100rpx;
+  background: #fff;
+  border: 2rpx solid #ededed;
+}
+
+.userImg {
+  width: 18%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.userImg text {
+  font-size: 25px;
+  color: black;
+  /*自己修改样式  */
+}
+
+.text_now {
+  position: absolute;
+  top: 30rpx;
+  left: 200rpx;
+  color: #fa7e00;
+  font-size: 38rpx;
+}
+
+.text_small {
+  position: absolute;
+  top: 30rpx;
+  left: 350rpx;
+  color: #999;
+}
+
+.text_make {
+  position: absolute;
+  top: 30rpx;
+  left: 450rpx;
+  color: #999;
+  font-size: 38rpx;
+}
+
+.img_order {
+  width: 8%;
+  height: 100%;
+  position: absolute;
+  top: 20rpx;
+  right: 40rpx;
+}
+
+.img_order text {
+  font-size: 28px;
+}
+
+.view_top {
+  position: absolute;
+  top: 700rpx;
+}
+
+.text_box {
+  margin: 10px 25px;
+  border-bottom: 1px solid #c3c3c3;
+  padding-bottom: 10px;
+}
+
+.text_box1 {
+  margin: 10px 25px;
+  border-bottom: 1px solid #c3c3c3;
+  padding-bottom: 10px;
+}
+
+.text_box1 text {
+  color: #fa7e00;
+}
+
+.img_destination {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.call_car {
+  width: 90%;
+  height: 100rpx;
+  background: #fa7e00;
+  position: absolute;
+  left: 5%;
+  margin-top: 2%;
+}
+
+.text_call_car {
+  position: absolute;
+  top: 26rpx;
+  left: 40%;
+}
+
+.view_Datetime {
+  width: 100%;
+  height: 80rpx;
+  border-bottom: 1px solid #999;
+}
+
+.picker {
+  margin-top: 20rpx;
+  position: absolute;
+  left: 12%;
+}
+
+.call_car_money {
+  width: 100%;
+  height: 110rpx;
+  background: #f6f8f8;
+  border-bottom: 1rpx solid #ededed;
+}
+
+.text_car_money {
+  font: #ededed;
+}
+
+.driverContent {
+  width: 90%;
+  height: 240rpx;
+  margin-left: 5%;
+  margin-top: 0%;
+  background: #ededed;
+  box-shadow: 0px 2px 2px 2px #999;
+  position: absolute;
+  top: 76%;
+}
+
+.driverContent image {
+  width: 130rpx;
+  height: 130rpx;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.driverCar text {
+  color: rebeccapurple;
+  display: flex;
+  margin-top: -10%;
+  margin-left: 78%;
+  font-size: 66rpx;
+}
+
+.driverName {
+  font-size: 34rpx;
+  color: #999;
+  display: flex;
+  margin-left: 30%;
+  margin-top: -20%;
+}
+
+.droverBrand {
+  width: 130rpx;
+  font-size: 28rpx;
+  color: #999;
+  border: 1rpx solid #c3c3c3;
+  background: #ededed;
+  display: flex;
+  margin-left: 30%;
+  margin-top: 0.5%;
+}
+
+.driverPerson {
+  font-size: 28rpx;
+  color: #999;
+  display: flex;
+  margin-left: 30%;
+  margin-top: 0.5%;
+}
+
+.cancelOrder text {
+  font-size: 36rpx;
+  color: #999;
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 3%;
+}
+
+.cancleText {
+  font-size: 32rpx;
+  color: #999;
+  display: flex;
+  margin-top: -38rpx;
+  margin-left: 9%;
+}
+
+.DaCll text {
+  font-size: 38rpx;
+  color: #999;
+  display: flex;
+  margin-top: -40rpx;
+  margin-left: 36%;
+}
+
+.cllDriver {
+  font-size: 32rpx;
+  color: #999;
+  display: flex;
+  margin-top: -38rpx;
+  margin-left: 43%;
+}
+
+.transpond text {
+  font-size: 40rpx;
+  color: #999;
+  display: flex;
+  margin-top: -40rpx;
+  margin-left: 71%;
+}
+
+.transpond_text {
+  font-size: 32rpx;
+  color: #999;
+  display: flex;
+  margin-top: -38rpx;
+  margin-left: 77%;
+}

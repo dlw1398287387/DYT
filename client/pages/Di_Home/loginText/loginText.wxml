@@ -1,0 +1,12 @@
+<view>
+  <text bindtap='GetUser3rdsession'>
+    识别用户3rdsession
+  </text>
+</view>
+
+
+<view>
+  <text></text>
+</view>
+<button open-type='getUserInfo' lang='zh_CN' bindgetuserinfo='onGetUserInfo' bindgetphonenumber='onGetUserInfo'>使用微信登陆</button>
+<button class='btn_Phone' open-type='getPhoneNumber' bindgetphonenumber='getPhoneNumber'>获取微信手机号</button>

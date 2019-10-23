@@ -1,0 +1,24 @@
+/**app.wxss**/
+@import 'libs/iconCss/My.wxss';
+@import 'libs/iconCss/Order.wxss';
+@import 'libs/iconCss/dot.wxss';
+@import 'libs/iconCss/weixin.wxss';
+@import 'libs/iconCss/shizhon.wxss';
+@import 'libs/iconCss/arrows.wxss';
+@import 'libs/iconCss/heart.wxss';
+@import 'libs/iconCss/gou.wxss';
+@import 'libs/iconCss/bofang.wxss';
+@import 'libs/iconCss/che.wxss';
+@import 'libs/iconCss/quxiao.wxss';
+@import 'libs/iconCss/phone.wxss';
+@import 'libs/iconCss/zhuanfa.wxss';
+@import 'libs/iconCss/qiche.wxss';
+@import 'libs/iconCss/quegou.wxss';
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+} 
