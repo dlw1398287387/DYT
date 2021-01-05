@@ -11,7 +11,7 @@
     "author": "Jason",
     "license": "MIT",
     "dependencies": {
-        "axios": "^0.15.3",
+        "axios": "^0.21.1",
         "china-time": "^0.12.3",
         "crypto": "^1.0.1",
         "hashmap": "^2.3.0",
